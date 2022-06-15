@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Windows.Input;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -25,15 +26,41 @@ namespace MenuFlyoutItemTemplateBindingBug
         public MainPage()
         {
             this.InitializeComponent();
-            //this.DataContext = this;
+            this.DataContext = new ViewModel(() =>
+            {
+                TextTest.Text = "command is executed";
+            });
         }
-        public void DoAnswer1Action()
+        public class ViewModel
         {
+            public ViewModel(Action a)
+            {
+                CustomCommand = new ButtonActionCommand(a);
+            }
 
+            public ButtonActionCommand CustomCommand { get; set; }
         }
-        public void DoAnswer2Action()
+    }
+
+    public class ButtonActionCommand : ICommand
+    {
+        public event EventHandler CanExecuteChanged;
+
+        public ButtonActionCommand(Action a)
         {
-
+            _action = a;
         }
+
+        public bool CanExecute(object parameter)
+        {
+            return true;
+        }
+
+        public void Execute(object parameter)
+        {
+            _action();
+        }
+
+        private readonly Action _action;
     }
 }

@@ -13,17 +13,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MenuFlyoutItemTemplateBindi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MenuFlyoutItemTemplateBindingBug.UWP", "MenuFlyoutItemTemplateBindingBug\MenuFlyoutItemTemplateBindingBug.UWP\MenuFlyoutItemTemplateBindingBug.UWP.csproj", "{D194E108-6B5A-4BEE-9899-7ACB2A9E0484}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MenuFlyoutItemTemplateBindingBug.Wasm", "MenuFlyoutItemTemplateBindingBug\MenuFlyoutItemTemplateBindingBug.Wasm\MenuFlyoutItemTemplateBindingBug.Wasm.csproj", "{0C5B9186-878C-467D-A4D2-4F97A63A1459}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MenuFlyoutItemTemplateBindingBug.Wasm", "MenuFlyoutItemTemplateBindingBug\MenuFlyoutItemTemplateBindingBug.Wasm\MenuFlyoutItemTemplateBindingBug.Wasm.csproj", "{0C5B9186-878C-467D-A4D2-4F97A63A1459}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MenuFlyoutItemTemplateBindingBug.macOS", "MenuFlyoutItemTemplateBindingBug\MenuFlyoutItemTemplateBindingBug.macOS\MenuFlyoutItemTemplateBindingBug.macOS.csproj", "{325095C2-664E-40AE-9ACD-A80C54717B2E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MenuFlyoutItemTemplateBindingBug.Skia.Wpf.Host", "MenuFlyoutItemTemplateBindingBug\MenuFlyoutItemTemplateBindingBug.Skia.Wpf.Host\MenuFlyoutItemTemplateBindingBug.Skia.Wpf.Host.csproj", "{7483C4DF-8F32-4A16-9905-C8FC79FB3BAA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MenuFlyoutItemTemplateBindingBug.Skia.Wpf.Host", "MenuFlyoutItemTemplateBindingBug\MenuFlyoutItemTemplateBindingBug.Skia.Wpf.Host\MenuFlyoutItemTemplateBindingBug.Skia.Wpf.Host.csproj", "{7483C4DF-8F32-4A16-9905-C8FC79FB3BAA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MenuFlyoutItemTemplateBindingBug.Skia.Wpf", "MenuFlyoutItemTemplateBindingBug\MenuFlyoutItemTemplateBindingBug.Skia.Wpf\MenuFlyoutItemTemplateBindingBug.Skia.Wpf.csproj", "{21F3575A-80C4-462B-88E7-68044A729723}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MenuFlyoutItemTemplateBindingBug.Skia.Wpf", "MenuFlyoutItemTemplateBindingBug\MenuFlyoutItemTemplateBindingBug.Skia.Wpf\MenuFlyoutItemTemplateBindingBug.Skia.Wpf.csproj", "{21F3575A-80C4-462B-88E7-68044A729723}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MenuFlyoutItemTemplateBindingBug.Skia.Gtk", "MenuFlyoutItemTemplateBindingBug\MenuFlyoutItemTemplateBindingBug.Skia.Gtk\MenuFlyoutItemTemplateBindingBug.Skia.Gtk.csproj", "{1957DCC7-0AF8-4D95-8006-608D4DCC7B4C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MenuFlyoutItemTemplateBindingBug.Skia.Gtk", "MenuFlyoutItemTemplateBindingBug\MenuFlyoutItemTemplateBindingBug.Skia.Gtk\MenuFlyoutItemTemplateBindingBug.Skia.Gtk.csproj", "{1957DCC7-0AF8-4D95-8006-608D4DCC7B4C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MenuFlyoutItemTemplateBindingBug.Skia.Tizen", "MenuFlyoutItemTemplateBindingBug\MenuFlyoutItemTemplateBindingBug.Skia.Tizen\MenuFlyoutItemTemplateBindingBug.Skia.Tizen.csproj", "{E995F8A8-B830-49B5-9367-2109822287F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MenuFlyoutItemTemplateBindingBug.Skia.Tizen", "MenuFlyoutItemTemplateBindingBug\MenuFlyoutItemTemplateBindingBug.Skia.Tizen\MenuFlyoutItemTemplateBindingBug.Skia.Tizen.csproj", "{E995F8A8-B830-49B5-9367-2109822287F0}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
@@ -188,6 +188,7 @@ Global
 		{5E21BB13-6CC3-4BD7-9A80-EB789D48CEEE}.Debug|ARM64.Build.0 = Debug|iPhoneSimulator
 		{5E21BB13-6CC3-4BD7-9A80-EB789D48CEEE}.Debug|iPhone.ActiveCfg = Debug|iPhone
 		{5E21BB13-6CC3-4BD7-9A80-EB789D48CEEE}.Debug|iPhone.Build.0 = Debug|iPhone
+		{5E21BB13-6CC3-4BD7-9A80-EB789D48CEEE}.Debug|iPhone.Deploy.0 = Debug|iPhone
 		{5E21BB13-6CC3-4BD7-9A80-EB789D48CEEE}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
 		{5E21BB13-6CC3-4BD7-9A80-EB789D48CEEE}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
 		{5E21BB13-6CC3-4BD7-9A80-EB789D48CEEE}.Debug|x64.ActiveCfg = Debug|iPhoneSimulator
