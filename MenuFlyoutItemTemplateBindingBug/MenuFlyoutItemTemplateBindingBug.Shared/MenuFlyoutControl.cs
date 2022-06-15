@@ -7,7 +7,7 @@ using Windows.UI.Xaml.Controls;
 
 namespace MenuFlyoutItemTemplateBindingBug
 {
-    public class MenuFlyoutControl : Control
+    public partial class MenuFlyoutControl : Control
     {
         public ICommand Action1
         {
