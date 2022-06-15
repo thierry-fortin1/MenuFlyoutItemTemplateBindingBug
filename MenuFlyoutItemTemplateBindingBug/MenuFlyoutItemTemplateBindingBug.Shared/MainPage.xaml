@@ -1,0 +1,43 @@
+﻿<Page x:Class="MenuFlyoutItemTemplateBindingBug.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:local="using:MenuFlyoutItemTemplateBindingBug"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      mc:Ignorable="d">
+
+    <Page.Resources>
+        <Style x:Name="CustomButtonFlyout"
+               TargetType="Button">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <MenuFlyout>
+                                        <!--Command="{TemplateBinding Action1}"--> 
+                        <MenuFlyoutItem Text="yooo1"
+                                        />
+                                        <!--Command="{TemplateBinding Action2}"--> 
+                        <MenuFlyoutItem Text="yooo2"
+                                        />
+                    </MenuFlyout>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Page.Resources>
+    
+    <Grid>
+        <TextBlock Text="Hello, world!"
+                   Margin="20"
+                   FontSize="30">
+        </TextBlock>
+        <Button Content="this is a button">
+            <Button.Flyout>
+                <MenuFlyout>
+                    <MenuFlyoutItem Text="answer 1" 
+                                    Click="DoAnswer1Action"/>
+                    <MenuFlyoutItem Text="answer 2"
+                                    Click="DoAnswer2Action"/>
+                </MenuFlyout>
+            </Button.Flyout>
+        </Button>
+    </Grid>
+</Page>
